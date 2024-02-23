@@ -1,0 +1,26 @@
+
+.card-img-top {
+    height:400px;
+    object-fit: cover;
+}
+a {
+    text-decoration: none;
+  }
+
+.card-title{
+    font-weight: bold;
+}
+
+.card-text{
+    font-weight: bold;
+}
+
+.namebrand1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 60px;
+    color: #EEAE23;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
