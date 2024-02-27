@@ -1,14 +1,10 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import Register from './pages/Register'
+import { routeList } from "./route/routes";
+import { useRoutes } from "react-router-dom";
+
 const App = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Register />} />
-        
-      </Routes>
-    </BrowserRouter>
-  )
+
+  const element = useRoutes(routeList)
+  return element;
 }
 
 export default App;
