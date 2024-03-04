@@ -2,7 +2,8 @@ import  { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './register.css'
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
+
 
 const RegistrationForm = () => {
     const [notif, setNotif] = useState("");
@@ -49,11 +50,12 @@ const RegistrationForm = () => {
     <div className={`container mt-5}`}>
       <div className="row">
         <div className={`leftColumn col-md-6`}>
-        <h1 className={`leftHeader`}>Ourvese</h1>
+        <h1 className={`leftHeader`}>ourverse</h1>
           <p className={`leftParagraph`}>Enjoy every moment with artists on global fandom life platform Ourverse</p>
           <div className="social-login mt-3">
             <p>Already have an account?</p>
-            <button className="btn btn-primary me-2">Login</button>
+            <Link to="/login">
+            <button className="btn btn-primary me-2">Login</button></Link>
           </div>
         </div>
         <div className={`rightColumn col-md-6 `}>
@@ -72,7 +74,7 @@ const RegistrationForm = () => {
               <input type="checkbox" className="form-check-input" id="terms" />
               <label className="form-check-label" htmlFor="terms">I Accept terms and conditions & privacy policy</label>
             </div>
-            <button type="submit" className="btn btn-primary">Register</button>
+            <button type="submit" className="btn">Register</button>
             {!!notif.length && <h4>{notif}</h4>}
           </form>
         </div>

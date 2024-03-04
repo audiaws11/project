@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Potta+One&display=swap');
 body{
     background-size: cover;
     background-position: center;
@@ -98,18 +97,25 @@ h4 {
   
   /* Style for the header in the left column */
   .leftHeader {
-    font-size: 40px; /* Adjust the font size as needed */
+    font-size: 50px; 
     font-weight: bold;
     margin-bottom: 1rem;
-    font-family: "Monoton", sans-serif;
-    font-weight: 500;
+    font-family: "Potta One", system-ui;
+    font-weight: 600;
     font-style: normal;
+    
   }
   
   .leftParagraph {
     font-size: 15px;
     line-height: 1.5;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Adjust the font size as needed */
+  }
+  .social-login{
+   
+    font-style: italic;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   /* Style for social login buttons */
@@ -125,22 +131,31 @@ h4 {
    
   }
   
-  /* Customizing the form elements */
+  
   .form-control {
-    border-radius: 10px; /* Bootstrap default is 0.25rem */
-    border: 1px solid #ced4da; /* Bootstrap default border color */
+    border-radius: 10px; 
+    border: 1px solid #ced4da; 
     
   }
   
-  /* Adjust the primary button to match your design */
-  .btn-primary {
-    background-color: #09D8E2; /* Reddish color as seen in the image */
+  
+  .btn {
+    background-color: #09D8E2; 
     border-color: #09D8E2;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight:bold;
+    font-weight:700;
     font-size: 13px;
     box-shadow: #727672 0 0 10px;
+    color: white;
   }
+  
+  .btn:hover {
+    background-color: #9ea6ae;
+    border-color: #9ea6ae;
+    color: white;
+  }
+
+
   
   .form-label{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

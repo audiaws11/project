@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Potta+One&display=swap');
+
+.title {
+    font-family: "Potta One", system-ui;
+    font-weight: 600;
+    font-size: 25px;
+    color: #09D8E2;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.title span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: black;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-box {
+    width: 500px;
+    height: 420px;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 60px rgba(255, 255, 255, 0.5);
+
+}
+
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 16px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background: linear-gradient(to right, #09D8E2 50%, #21E1BC); 
+}
+
+.login-box button:hover {
+    background-color: #686f77;
+}
+
+.register {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.register a {
+    color: #09D8E2;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+h3  {
+    font-size: 15px;
+    color: #09D8E2;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+h4 {
+    font-size: 15px;
+    color: rgb(133, 43, 43) !important;
+    margin-bottom: 20px;
+}
