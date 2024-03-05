@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './register.css'
 import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
+import Layout from '../components/Layout';
 
 
 const RegistrationForm = () => {
@@ -47,6 +48,7 @@ const RegistrationForm = () => {
       };
     
   return (
+    <Layout>
     <div className={`container mt-5}`}>
       <div className="row">
         <div className={`leftColumn col-md-6`}>
@@ -80,6 +82,7 @@ const RegistrationForm = () => {
         </div>
       </div>
     </div>
+    </Layout>
   );
 }
 

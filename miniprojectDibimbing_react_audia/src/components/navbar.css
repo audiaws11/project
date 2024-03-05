@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Potta+One&display=swap');
+
+.nav {
+    font-size: 13px;
+    color: black;
+    font-weight:bolder;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    
+}
+.navbar-brand {
+    font-size: 30px;
+    color: #09D8E2;
+    font-weight: bold;
+    font-family: "Potta One", system-ui;
+    text-align: center;
+}
+
+.nav-style {
+    font-size: 10px;
+    color: #518B25;
+    font-weight: bold;
+    height: 35px;
+    width: 140px;
+}
+
+.form-control {
+    font-size: 10px;
+    font-weight: bold;
+}

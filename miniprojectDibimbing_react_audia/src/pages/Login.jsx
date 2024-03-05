@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
 import './login.css';
+import Layout from '../components/Layout';
 
 
 const Login = () => {
@@ -47,6 +48,7 @@ const Login = () => {
     };
   
     return (
+      <Layout>
         <div>
             
         <div className="login-container">
@@ -73,6 +75,7 @@ const Login = () => {
             </div>
         </div>
     </div>
+    </Layout>
     );
   }
 

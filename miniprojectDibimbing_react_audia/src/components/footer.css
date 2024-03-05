@@ -1,0 +1,47 @@
+
+
+#footer{
+    background: #212121;
+    color: #ffffff;
+    font-size: 14px;
+    height: 200px;
+
+}
+
+#open {
+    font-weight: lighter
+}
+
+#followus {
+    color: #ADADAD;
+}
+
+.logo {
+    color: #ADADAD;
+    font-size: 18px;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: lighter;
+
+}
+
+.card-img-top {
+    height:400px;
+    object-fit: cover;
+}
+a {
+    text-decoration: none;
+  }
+
+.modal-body{
+text-align: center;
+color: #212121;
+}
+
+.breadcrumb a{
+    color: #4e4c4c;
+    text-decoration: none;
+ }
