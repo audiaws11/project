@@ -37,9 +37,9 @@ const Login = () => {
           const token = response.data.token;
           localStorage.setItem("token", token);
           console.log(response);
-        //   setTimeout(() => {
-        //     navigate("/");
-        //   }, 3000);
+          setTimeout(() => {
+            navigate("/listuser");
+          }, 3000);
         })
         .catch((error) => {
           console.log(error.response);
@@ -67,7 +67,7 @@ const Login = () => {
         placeholder="password"
         value={password}
         onChange={handlePasswordChange} /><br/>
-        <p className="register">Dont have account? <Link to="/regusrer">Register</Link></p>
+        <p className="register">Dont have account? <Link to="/">Register</Link></p>
         <button disabled={loading?true:false} onClick={handleSubmit}>
         {loading ? "Loading..." : "Continue with this email"}</button>
         {!!notif.length && <h3>{notif}</h3>}
