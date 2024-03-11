@@ -10,16 +10,41 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const ListUser = () => {
     const [users, setUsers] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
+    const [pagination, setPagination] = useState({
+        per_page:0,
+        total:0,
+        total_pages:0,
+        page:0,
+        current_page:1,
+    })
 
     const getUserData = (page) => {
         axios
             .get(`https://reqres.in/api/users?page=${page}`)
             .then((res) => {
                 setUsers(res.data.data);
+                setPagination({
+                    per_page:res.data.per_page,
+                    total:res.data.total,
+                    total_pages:res.data.total_pages,
+                    page:res.data.page
+                });
             })
             .catch((err) => {
                 console.log(err);
             });
+    };
+
+    const handleBack = () => {
+        if (currentPage > 1) {
+            setCurrentPage(currentPage - 1);
+        }
+    };
+
+    const handleNext = () => {
+        if (currentPage < pagination.total_pages) {
+            setCurrentPage(currentPage + 1);
+        }
     };
 
     useEffect(() => {
@@ -49,8 +74,8 @@ const ListUser = () => {
                     ))}
                 </div>
                 <div className="button-container">
-                    <button disabled={currentPage === 1} onClick={() => setCurrentPage(1)}>Back</button>
-                    <button disabled={currentPage === 2} onClick={() => setCurrentPage(2)}>Next</button>
+                    <button disabled={pagination.page === 1} onClick={handleBack}>Back</button>
+                    <button disabled={pagination.page === pagination.total_pages} onClick={handleNext}>Next</button>
                 </div>
             </Layout>
         </div>
