@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
+import Layout from '../../components/Layout';
 import './login.css';
-import Layout from '../components/Layout';
 
 
 const Login = () => {
@@ -49,7 +49,7 @@ const Login = () => {
   
     return (
       <Layout>
-        <div>
+        <div className="loginpage">
             
         <div className="login-container">
             <div className="login-box">

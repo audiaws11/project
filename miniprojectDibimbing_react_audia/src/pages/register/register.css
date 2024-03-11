@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Galada&family=Potta+One&display=swap');
 
-body {
+.registerpage {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height:100vh;
+
   background: linear-gradient(135deg,  #09D8E2 50%, #21E1BC);
 }
 h2 {
@@ -26,6 +26,7 @@ h4 {
     font-size: 15px;
     padding-top: 15px;
     text-align: center;
+    color: #09D8E2;
 }
 
 .container {
@@ -34,6 +35,8 @@ h4 {
     background-position: center;
     background-repeat: no-repeat;
     padding-bottom:130px;
+    padding-left: 50px;
+    padding-right: 50px;
     
     
   }
@@ -99,7 +102,7 @@ h4 {
     box-shadow: #727672 0 0 10px;
   }
   
-  /* Style for the header in the left column */
+
   .leftHeader {
     font-size: 50px; 
     font-weight: bold;
@@ -107,6 +110,8 @@ h4 {
     font-family: "Potta One", system-ui;
     font-weight: 600;
     font-style: normal;
+    color: #fafafa;
+    text-align: left;
     
   }
   
@@ -122,12 +127,13 @@ h4 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
-  /* Style for social login buttons */
+ 
   .social-login .btn {
     margin-right: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight:bold;
     font-size: 13px;
+    
   }
   
   .social-login .btn:last-child {
@@ -143,22 +149,40 @@ h4 {
   }
   
   
-  .btn {
-    background-color: #09D8E2; 
+  .btn1 {
+    background-color: hsl(183, 92%, 46%); 
     border-color: #09D8E2;
+    border-radius: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight:700;
     font-size: 13px;
-    box-shadow: #727672 0 0 10px;
+    box-shadow: #727672 0 0 10px(0, 0, 0, 0.15);
     color: white;
   }
   
-  .btn:hover {
+  
+  .btn1:hover {
     background-color: #9ea6ae;
     border-color: #9ea6ae;
     color: white;
   }
 
+  .btn3 {
+    background-color: #ffffff; 
+    border-color: #fafafa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:700;
+    font-size: 13px;
+    box-shadow: #727672 0 0 10px(0, 0, 0, 0.15);
+    color: #21E1BC;
+    border-radius: 20px;
+  }
+
+  .btn3:hover {
+    background-color: #9ea6ae;
+    border-color: #9ea6ae;
+    color: white;
+  }
 
   
   .form-label{

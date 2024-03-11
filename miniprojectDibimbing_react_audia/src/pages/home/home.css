@@ -1,0 +1,49 @@
+
+.article1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 60px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.article2 {
+    text-align: center;
+    color: #ccc;
+    background: linear-gradient(135deg,  #09D8E2 50%, #21E1BC);
+    padding: 30px;
+    
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+}

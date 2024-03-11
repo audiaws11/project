@@ -1,14 +1,19 @@
 
-import Register from "../pages/Register";
-import Login from "../pages/Login";
-import ListUser from "../pages/ListUser";
+import Home from "../pages/home/Home";
+import Register from "../pages/register/Register";
+import Login from "../pages/login/Login";
+import ListUser from "../pages/listuser/ListUser";
 import ProtectedRoute from "./ProtectedRoute";
-import DetailUser from "../pages/DetailUser";
+import DetailUser from "../pages/detailuser/DetailUser";
 
 export const routeList = [
-   
     {
         path: "/",
+        element: <Home />,
+    },
+   
+    {
+        path: "/register",
         element: <Register />,
     },
     {
@@ -18,11 +23,19 @@ export const routeList = [
     {   
         
         path: "/listuser",
-        element: <ProtectedRoute><ListUser /></ProtectedRoute>,
+        element: (
+        <ProtectedRoute>
+            <ListUser />
+        </ProtectedRoute>
+        ),
     },
     {   
         
-        path: "/detailuser",
-        element: <ProtectedRoute><DetailUser /></ProtectedRoute>,
+        path: "/detailuser/:id",
+        element: (
+        <ProtectedRoute>
+            <DetailUser />
+        </ProtectedRoute>
+        ),
     },
 ]

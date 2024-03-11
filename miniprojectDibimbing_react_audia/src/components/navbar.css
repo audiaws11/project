@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Galada&family=Potta+One&display=swap');
 
 .nav {
-    font-size: 13px;
+    font-size: 14px;
     color: black;
     font-weight:bolder;
     height: 30px;
-    width: 150px;
+    width: 100px;
     text-align: center;
     
 }
@@ -16,6 +16,7 @@
     font-family: "Potta One", system-ui;
     text-align: center;
 }
+
 
 .nav-style {
     font-size: 10px;
@@ -28,4 +29,9 @@
 .form-control {
     font-size: 10px;
     font-weight: bold;
+}
+.logout {
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
 }

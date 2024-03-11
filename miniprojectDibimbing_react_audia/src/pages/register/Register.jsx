@@ -1,9 +1,11 @@
-import  { useState } from 'react';
+import  { useEffect, useState } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
+import Layout from '../../components/Layout';
+import axios from 'axios';
+import AOS from "aos";
+import 'aos/dist/aos.css'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './register.css'
-import axios from 'axios';
-import { useNavigate, Link } from 'react-router-dom';
-import Layout from '../components/Layout';
 
 
 const RegistrationForm = () => {
@@ -38,7 +40,7 @@ const RegistrationForm = () => {
             localStorage.setItem("token", token);
             console.log(response);
             setTimeout(() => {
-              navigate("/");
+              navigate("/login");
             }, 3000);
           })
           .catch((error) => {
@@ -46,18 +48,23 @@ const RegistrationForm = () => {
             setNotifError(error.response.data.error);
           });
       };
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
     
   return (
-    <Layout>
+    <div className="registerpage">
+       <Layout>
     <div className={`container mt-5}`}>
       <div className="row">
         <div className={`leftColumn col-md-6`}>
-        <h1 className={`leftHeader`}>ourverse</h1>
+        <h1 className={`leftHeader`} data-aos="zoom-in">ourverse</h1>
           <p className={`leftParagraph`}>Enjoy every moment with artists on global fandom life platform Ourverse</p>
           <div className="social-login mt-3">
             <p>Already have an account?</p>
             <Link to="/login">
-            <button className="btn btn-primary me-2">Login</button></Link>
+            <button className="btn3 btn btn-primary me-2">Login</button></Link>
           </div>
         </div>
         <div className={`rightColumn col-md-6 `}>
@@ -70,19 +77,23 @@ const RegistrationForm = () => {
             <div className="mb-3">
               <label htmlFor="password" className="form-label">Password</label>
               <input type="password" className="form-control" id="password" name="password" onChange={handleChange} />
-              {!!notifError.length && <h3>{notifError}</h3>}
+              
             </div>
             <div className="mb-3 form-check">
               <input type="checkbox" className="form-check-input" id="terms" />
               <label className="form-check-label" htmlFor="terms">I Accept terms and conditions & privacy policy</label>
             </div>
-            <button type="submit" className="btn">Register</button>
-            {!!notif.length && <h4>{notif}</h4>}
+            <button type="submit" className="btn1 btn">Register</button>
+            {!!notif.length && <h3>{notif}</h3>}
+            {!!notifError.length && <h4>{notifError}</h4>}
+            
           </form>
         </div>
       </div>
     </div>
     </Layout>
+    </div>
+   
   );
 }
 
