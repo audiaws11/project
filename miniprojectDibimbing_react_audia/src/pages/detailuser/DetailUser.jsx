@@ -47,8 +47,8 @@ const DetailUser = () => {
             <div className="detailuserpage">
                 <div className="detailuser text-center">
                     <h1>Profile User</h1>
-                    <img className="avatar" src={user?.avatar} alt={user?.first_name} />
-                    <h2 className="name">name : {user?.first_name} {user?.last_name}</h2>
+                    <img className="avatar"  src={user?.avatar} alt={user?.first_name} />
+                    <h2 className="name">full name : {user?.first_name} {user?.last_name}</h2>
                     <p className="email">email : {user?.email}</p>
                     <button className="button" onClick={handleDelete}>Delete</button>
                 </div>
