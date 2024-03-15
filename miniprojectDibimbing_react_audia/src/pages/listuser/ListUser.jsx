@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import Layout from "../../components/Layout";
+import Layout from "../../components/layout/Layout";
 import AOS from "aos";
 import 'aos/dist/aos.css'; 
 import "./listuser.css";

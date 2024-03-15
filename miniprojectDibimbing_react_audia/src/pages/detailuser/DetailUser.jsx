@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import Layout from "../../components/Layout";
+import Layout from "../../components/layout/Layout";
 import axios from "axios";
 import "./detailuser.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -47,7 +47,7 @@ const DetailUser = () => {
             <div className="detailuserpage">
                 <div className="detailuser text-center">
                     <h1>Profile User</h1>
-                    <img className="avatar"  src={user?.avatar} alt={user?.first_name} />
+                    <img className="avatar" src={user?.avatar} alt={user?.first_name} />
                     <h2 className="name">full name : {user?.first_name} {user?.last_name}</h2>
                     <p className="email">email : {user?.email}</p>
                     <button className="button" onClick={handleDelete}>Delete</button>
